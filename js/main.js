@@ -304,10 +304,10 @@
         max: 1600000,
         values: [0, 1000000],
         slide: function (event, ui) {
-            $("#priceRange").val("[" + ui.values[0] + "-" + ui.values[1] + "]" + "$");
+            $("#priceRange").val("[" + ui.values[0] + "-" + ui.values[1] + "]" + "Rwf");
         }
     });
-    $("#priceRange").val("[" + $("#price-range").slider("values", 0) + "-" + $("#price-range").slider("values", 1) + "]" + "$");
+    $("#priceRange").val("[" + $("#price-range").slider("values", 0) + "-" + $("#price-range").slider("values", 1) + "]" + "Rwf");
 
     //price 2
     $("#price-range-P").slider({
@@ -317,10 +317,10 @@
         step: 50,
         values: [50, 1000000],
         slide: function (event, ui) {
-            $("#priceRangeP").val("[ " + "$" + ui.values[0] + " - " + "$" + ui.values[1] + " ]");
+            $("#priceRangeP").val("[ " + "$" + ui.values[0] + " - " + "Rwf" + ui.values[1] + " ]");
         }
     });
-    $("#priceRangeP").val("[ " + "$" + $("#price-range-P").slider("values", 0) + " - " + "$" + $("#price-range-P").slider("values", 1) + " ]");
+    $("#priceRangeP").val("[ " + "Rwf" + $("#price-range-P").slider("values", 0) + " - " + "Rwf" + $("#price-range-P").slider("values", 1) + " ]");
 
     //room size 1
     $("#roomsize-range").slider({
